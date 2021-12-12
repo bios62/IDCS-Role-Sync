@@ -32,7 +32,8 @@ The program is run as follows:
 python3 group2role –configfile <config.json> --idcsname < IDCSshortname in the configfile>\
 The config file has the following format:\
 
-		{
+		
+{
 	"IDCSinstances": [{
 			"name": "IDCSshortname",
 			"clientid": "<xxx>",
