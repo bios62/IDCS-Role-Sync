@@ -31,8 +31,7 @@ nly IDCS uses can be assigned to an application role and not groups.
 The program is run as follows:
 python3 group2role –configfile <config.json> --idcsname < IDCSshortname in the configfile>\
 The config file has the following format:<br>
- 
-		
+'''		
 {
 	"IDCSinstances": [{
 			"name": "IDCSshortname",
@@ -53,7 +52,7 @@ The config file has the following format:<br>
 		}
 	]
 }
-
+'''
 There is a json array that describes which groups should be synced to which application role for 
 which application under “Oracle Cloud Services” 
 
