@@ -55,7 +55,7 @@ The config file has the following format:\
 }
 
 There is a json array that describes which groups should be synced to which application role for 
-which application under “Oracle Cloud Services”
+which application under “Oracle Cloud Services” 
 
 ## REST APIs used
 
