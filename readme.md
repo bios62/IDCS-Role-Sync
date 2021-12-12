@@ -31,27 +31,44 @@ nly IDCS uses can be assigned to an application role and not groups.
 The program is run as follows:
 python3 group2role –configfile <config.json> --idcsname < IDCSshortname in the configfile>\
 The config file has the following format:\
-{\
-	"IDCSinstances": [{\
-			"name": "IDCSshortname",\
-			"clientid": "<xxx>",\
-			"clientsecret": "<xxx>",\
-			"idcsapiuri": "https://idcs-<tenant>.identity.oraclecloud.com",\
-			"syncgroups": [{\
-					"groupname": "<name of IDCS group>",\
-					"oracleservicename": "<name of service>",\
-					"rolename": "<name of role>"\
-				},\
-				{\
-					"groupname": "<name of IDCS group>",\
-					"oracleservicename": "<name of service>",\
-					"rolename": "<name of role>"\
-				}\
-			]\
-		}\
-	]\
-}\
-\
+		{
+	"IDCSinstances": [{
+			"name": "epm",
+			"clientid": "xxxxxxxxxxxxx",
+            "clientsecret": "xxxxxx",
+			"idcsapiuri": "https://idcs-<youridcs>.oraclecloud.com/",
+			"syncgroups": [{
+					"groupname": "epm_power_user",
+					"oracleservicename": "Planning_epm2-test",
+					"rolename": "Power User"
+				},
+				{
+					"groupname": "EPM_service_administrator",
+					"oracleservicename": "Planning_epm2-test",
+					"rolename": "Service Administrator"
+				}
+			]
+		},
+		{
+			"name": "IDCSshortname",
+			"clientid": "<xxx>",
+			"clientsecret": "<xxx>",
+			"idcsapiuri": "https://idcs-<tenant>.identity.oraclecloud.com",
+			"syncgroups": [{
+					"groupname": "<name of IDCS group>",
+					"oracleservicename": "<name of service>",
+					"rolename": "<name of role>"
+				},
+				{
+					"groupname": "<name of IDCS group>",
+					"oracleservicename": "<name of service>",
+					"rolename": "<name of role>"
+				}
+			]
+		}
+	]
+}
+
 There is a json array that describes which groups should be synced to which application role for 
 which application under “Oracle Cloud Services”
 
