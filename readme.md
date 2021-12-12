@@ -37,38 +37,38 @@ The config file has the following format:\
 			"clientid": "<xxx>",\
 			"clientsecret": "<xxx>",\
 			"idcsapiuri": "https://idcs-<tenant>.identity.oraclecloud.com",\
-			"syncgroups": [{
-					"groupname": "<name of IDCS group>",
-					"oracleservicename": "<name of service>",
-					"rolename": "<name of role>"
-				},
-				{
-					"groupname": "<name of IDCS group>",
-					"oracleservicename": "<name of service>",
-					"rolename": "<name of role>"
-				}
-			]
-		}
-	]
-}
-
+			"syncgroups": [{\
+					"groupname": "<name of IDCS group>",\
+					"oracleservicename": "<name of service>",\
+					"rolename": "<name of role>"\
+				},\
+				{\
+					"groupname": "<name of IDCS group>",\
+					"oracleservicename": "<name of service>",\
+					"rolename": "<name of role>"\
+				}\
+			]\
+		}\
+	]\
+}\
+\
 There is a json array that describes which groups should be synced to which application role for 
 which application under “Oracle Cloud Services”
 
 ## REST APIs used
 
-Get a user token (POST, /oauth2/v1/token)
-https://docs.oracle.com/en/cloud/paas/identity-cloud/rest-api/op-oauth2-v1-token-post.html 
-Search Groups with filter (GET, /admin/v1/Groups)
-https://docs.oracle.com/en/cloud/paas/identity-cloud/rest-api/op-admin-v1-groups-get.html
-Search App Roles with filter (GET, /admin/v1/AppRoles)
-https://docs.oracle.com/en/cloud/paas/identity-cloud/rest-api/op-admin-v1-approles-get.html
-Search Grants with filter (GET, /admin/v1/Grants)
-https://docs.oracle.com/en/cloud/paas/identity-cloud/rest-api/op-admin-v1-grants-get.html
-Add a Grantee to an AppRole (POST, /admin/v1/Grants)
-https://docs.oracle.com/en/cloud/paas/identity-cloud/rest-api/op-admin-v1-grants-post.html
-Remove a Grantee from an AppRole (DELETE, /admin/v1/Grants)
-https://docs.oracle.com/en/cloud/paas/identity-cloud/rest-api/op-admin-v1-grants-id-delete.html
+Get a user token (POST, /oauth2/v1/token)\
+https://docs.oracle.com/en/cloud/paas/identity-cloud/rest-api/op-oauth2-v1-token-post.html \\
+Search Groups with filter (GET, /admin/v1/Groups)\
+https://docs.oracle.com/en/cloud/paas/identity-cloud/rest-api/op-admin-v1-groups-get.html\\
+Search App Roles with filter (GET, /admin/v1/AppRoles)\
+https://docs.oracle.com/en/cloud/paas/identity-cloud/rest-api/op-admin-v1-approles-get.html\\
+Search Grants with filter (GET, /admin/v1/Grants)\
+https://docs.oracle.com/en/cloud/paas/identity-cloud/rest-api/op-admin-v1-grants-get.html\\
+Add a Grantee to an AppRole (POST, /admin/v1/Grants)\
+https://docs.oracle.com/en/cloud/paas/identity-cloud/rest-api/op-admin-v1-grants-post.html\\
+Remove a Grantee from an AppRole (DELETE, /admin/v1/Grants)\
+https://docs.oracle.com/en/cloud/paas/identity-cloud/rest-api/op-admin-v1-grants-id-delete.html\\
 
 ## Quick program flow
 
