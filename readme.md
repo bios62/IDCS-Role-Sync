@@ -17,11 +17,11 @@ service the “Oracle Cloud Service” object represents.
 
 ![IDCS Groups](/images/groups)
 
-![IDCS Group members]/images/group_members.JPG
+![IDCS Group members](/images/group_members.JPG)
 
-![IDCS applications]/images/applications.JPG
+![IDCS applications](/images/applications.JPG)
 
-![IDCS applications]/images/appliication_roles.JPG
+![IDCS applications](/images/appliication_roles.JPG)
 
 The sample code her, creates a relationship between an IDCS group and an application role for the cases where o
 nly IDCS uses can be assigned to an application role and not groups.
