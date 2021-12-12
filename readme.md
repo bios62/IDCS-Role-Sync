@@ -31,7 +31,7 @@ nly IDCS uses can be assigned to an application role and not groups.
 The program is run as follows:
 python3 group2role –configfile <config.json> --idcsname < IDCSshortname in the configfile>\
 The config file has the following format:\
-
+ 
 		
 {
 	"IDCSinstances": [{
