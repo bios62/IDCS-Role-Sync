@@ -15,7 +15,7 @@ The “Oracle Cloud Services” type of application has a tab “application rol
 groups may be assigned to the application role. The semantics of this assignment is dependent on the actual 
 service the “Oracle Cloud Service” object represents.
 
-! [IDCS Groups]/images/groups
+![IDCS Groups](/images/groups)
 
 ![IDCS Group members]/images/group_members.JPG
 
